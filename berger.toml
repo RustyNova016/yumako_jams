@@ -1,0 +1,19 @@
+[repository.yumako_jams]
+path = "./"
+remote_url = "https://github.com/RustyNova016/yumako_jams"
+
+    [repository.yumako_jams.rust]
+    fmt = true
+    sqlx = false
+    clippy_hack = false
+
+    [repository.yumako_jams.rust.ci]
+    fmt = true
+    doc = true
+    clippy = true
+    test = true
+    nextest = false
+    msrv = true
+    machete = true
+    semver = false
+    # min_versions = true
